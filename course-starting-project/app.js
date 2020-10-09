@@ -1,14 +1,20 @@
-function combine(input1, input2) {
-    var result;
-    if (typeof input1 === 'number' && typeof input2 === 'number') {
-        result = input1 + input2;
-    }
-    else {
-        result = input1.toString() + input2.toString();
-    }
-    return result;
+function add(n1, n2) {
+    return n1 + n2;
 }
-var combinedAges = combine(30, 26);
-console.log(combinedAges);
-var combinednames = combine('Ilia', 'Masha');
-console.log(combinednames);
+function printResult(num) {
+    console.log('Result: ' + num);
+}
+function addAndHandle(n1, n2, cb) {
+    var result = n1 + n2;
+    cb(result);
+}
+// function printResult(num: number): undefined {
+//   console.log('Result: ' + num)
+//   return;
+// }
+printResult(add(5, 12));
+// Function type which takes two number parameters and returns number
+var combinedValues;
+combinedValues = add;
+console.log(combinedValues(1, 2));
+addAndHandle(10, 20, function (num) { return console.log(num); });
