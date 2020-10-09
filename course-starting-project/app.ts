@@ -9,3 +9,8 @@ userInput = 'tere'
 if (typeof userInput === 'string') {
   userName = userInput
 }
+
+// This fucntion never returns
+function generateError(message: string, code: number): never {
+  throw { message: message, errorCode: code }
+}
