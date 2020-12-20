@@ -5,7 +5,7 @@ function add(n1: number, n2: number) {
 function printResult(num: number): void {
   console.log('Result: ' + num)
 }
-// Example of cvallback function type
+// Example of callback function type
 function addAndHandle(n1: number, n2: number, cb: (a: number) => void) {
   const result = n1 + n2
   cb(result)
@@ -15,7 +15,7 @@ function addAndHandle(n1: number, n2: number, cb: (a: number) => void) {
 //   console.log('Result: ' + num)
 //   return;
 // }
-
+ 
 printResult(add(5, 12))
 
 // Function type which takes two number parameters and returns number
