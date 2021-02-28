@@ -57,3 +57,9 @@ Using `document` or `console` might create troubles for compiler since it doesn'
 Allows to compile js files - syntax will be checked as for ts files.   
 ### CheckJs
 Will only check js files for syntax.
+### Source map
+`sourceMap` - enables source maps for TS files (browser).   
+### Directories
+`outFile` and `outDir` - can set default dist and source directories.   
+### Remove comments 
+`removeComments` - remove comments made in TS when compiled to JS
