@@ -25,8 +25,20 @@ enum Role {
 }
 ```
 
+## Debugging (with browser)
+* Prosess should already run when debugging is started
+* When initially run `F5` -> prompt with browser selection will be displayed
+	* Debug chrome extensiopn should be installed
+* Set break point
+* After that run debugging againg
+* New tab will be opened (old debugging tabs should be closed)
+* Working!
+
+Compiler Config Docs: https://www.typescriptlang.org/docs/handbook/compiler-options.html
+VS Code TS Debugging: https://code.visualstudio.com/docs/typescript/typescript-debugging
+
 ## Compiler config
-https://www.typescriptlang.org/docs/handbook/tsconfig-json.html 
+tsconfig Docs: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
 
 ### Exclude
 In tsconfig possible to add `exclude` on the root level to exclude files should be compiled. `node_modules` is exlcuded by defaults if no excliusions are defined. Otherwise it should be explicitly defined. 
