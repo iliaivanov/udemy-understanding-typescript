@@ -24,6 +24,7 @@ enum Role {
   READ_ONLY_USER   
 }
 ```
+`_` function argument makes it optional and TS ignores not passing it in   
 
 ## Debugging (with browser)
 * Prosess should already run when debugging is started
